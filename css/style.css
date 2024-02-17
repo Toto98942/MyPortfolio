@@ -1,0 +1,253 @@
+
+/*CSS of a navbar*/
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0px;
+    background-color: #0B60B0;
+}
+.nav-item {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F0EDCF;
+    margin: 0 10px;
+    cursor: pointer;
+    list-style: none;
+}
+.navbar-container a:hover {
+    background-color: #40A2D8;
+    color: #F0EDCF;
+}
+.nav-item {
+    text-decoration: none;
+}
+/*CSS of a background cover*/
+#home-section {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*CSS of home section*/
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    color: #F0EDCF;
+    max-width: 100%;
+}
+.title-home{
+    font-size: 7rem;
+    margin-top: 1em;
+    font-family: "Roboto";
+}
+.subtitle-home {
+    letter-spacing: 6px;
+    font-family: "Montserrat";
+}
+/*CSS of about me section*/
+#about-section {
+    display: flex;
+    justify-content: center;
+    background-color: #0B60B0 ;
+    width: 100%;
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 1fr;   
+    margin: 50px; 
+    height: 70vh;
+    align-items: center;
+    background-color: #F0EDCF ;
+    border: #40A2D8 groove 10px;
+    border-radius: 10%;
+    width: 100%;
+    background-color: #0B60B0;
+    color: #F0EDCF;
+    box-sizing: border-box;
+}
+.about-image {
+    display: flex;
+    justify-content: center;
+    }
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 50px;
+}
+.title-about {
+    font-size: 3rem;
+}
+.content-about {
+    font-size: 15px;
+    margin-top: 2rem;
+}
+.about-image > img {
+    width: 200px;
+    border-radius: 50%;
+}
+/*CSS of soft/hard skills section*/
+#skill-section {
+    background-color: #0B60B0;
+    color: #F0EDCF;
+}
+.skill-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+.soft-skill {
+    width: 50%;
+}
+.title-skill {
+    font-family: "Roboto" ;
+}
+.soft-text {
+    font-family: "Montserrat" ;
+}
+.skill-name {
+    font-family: "Montserrat" ;
+}
+.hard-skill {
+    width: 60%;
+}
+.skill-name {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+/*CSS of Works Section */
+#work-section {
+    background-color: #0B60B0;
+    padding-bottom: 20px;
+}
+.work-title {
+    color: #F0EDCF;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto" ;
+}
+.work-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card-body {
+    background-color: #0B60B0;    
+}
+.work-container > div {
+    width: 25%;
+    border-style: groove;
+    border: #40A2D8 10px groove;
+    text-align: center;
+}
+.card > img {
+    height: 130px;
+}
+.card-body > h5 {
+    color: #F0EDCF;
+}
+.card-text {
+    color: #F0EDCF;
+}
+.button-detalis {
+    border: 2px solid #F0EDCF;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #40A2D8;
+    color: #F0EDCF;
+    }
+/*CSS for Footer Section */
+#footer-section {
+    background-color: #0B60B0;
+}
+.contactme-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.button-container {
+    margin-top: 20px;
+    
+}
+.copyright {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+    color: #F0EDCF;
+}
+
+
+
+/*CSS for Responsive Site*/
+@media (max-width:768px) {
+    .navbar-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-item {
+        margin: 5px;
+    }
+    .home-container > h1 {
+        font-size: 5rem;
+    }
+    .home-container > h3 {
+        font-size: 1em
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .text-container > h2 {
+        font-size: 24px;
+    }
+    .text-container > p {
+        font-size: 13px;
+    }
+    .about-image > img {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .work-container > div {
+        width: 80%;
+        margin-top: 5px;
+    }
+    .card-body > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+}
+
+
+    
+
+
+
